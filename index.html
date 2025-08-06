@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimal Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="background">
+    <div class="container">
+      <div class="music-player">
+        <img id="albumArt" src="Covers/default.jpg" alt="Album Art" />
+        <h2 id="title">Song Title</h2>
+        <p id="artist">Artist Name</p>
+
+        <audio id="audio" src=""></audio>
+
+        <label for="seekBar"> Play </label>
+
+       <input type="range" id="seekBar" value="0" />
+<div class="time-info">
+  <span id="currentTime">0:00</span>
+  <span id="duration">0:00</span>
+</div>
+
+
+        <div class="controls">
+  <button onclick="prevSong()"> ⏮ </button>
+  <button onclick="togglePlay()" id="playPause">⏹</button>
+  <button onclick="nextSong()"> ⏭ </button>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="songs.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
